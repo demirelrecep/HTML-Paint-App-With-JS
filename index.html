@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PaintEx</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tools">
+            <div class="tool tool1"><i class="fas fa-paint-brush"></i></div>
+            <div class="tool tool2"><i class="fas fa-pencil-alt"></i></div>
+            <div class="tool tool3" onclick="changeColor('fff')"><i class="fas fa-eraser"></i></div>
+            <div class="tool tool4"><i class="fas fa-paint-brush"></i></div>
+            <div class="tool tool5"><i class="fas fa-paint-brush"></i></div>
+            <div class="tool tool6"><i class="fas fa-paint-brush"></i></div>
+            <div class="tool tool7"><i class="fas fa-paint-brush"></i></div>
+            <div class="tool tool8"><i class="fas fa-paint-brush"></i></div>
+            <div class="tool tool9"><i class="fas fa-paint-brush"></i></div>
+            <div class="tool tool10"><i class="fas fa-paint-brush"></i></div>
+        </div>
+        <canvas class="canvasdiv" id="canvas" width="900" height="500"></canvas>
+        <div class="colors">
+            <div class="color color1" onclick="changeColor('000')"></div>
+            <div class="color color2" onclick="changeColor('fff')"></div>
+            <div class="color color3" onclick="changeColor('f00')"></div>
+            <div class="color color4" onclick="changeColor('0f0')"></div>
+            <div class="color color5" onclick="changeColor('00f')"></div>
+            <div class="color color6" onclick="changeColor('ff0')"></div>
+            <div class="color color7" onclick="changeColor('0ff')"></div>
+            <div class="color color8" onclick="changeColor('f0f')"></div>
+            <div class="color color9" onclick="changeColor('900')"></div>
+            <div class="color color10" onclick="changeColor('090')"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
