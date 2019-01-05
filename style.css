@@ -1,13 +1,22 @@
-body{
+*{
     margin: 0;
     padding: 0;
 }
+html {
+    height: 100%;
+
+}
+body{
+    background: linear-gradient(#2c3e50, #82589F);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .container{
     display: block;
-    margin: 10px auto;
-    width: 1006px;
-    height: 502px;
-    border: 1px solid;
+    margin: 20px auto;
+    width: 1106px;
+    height: 552px;
 }
 .canvasdiv{
     display: block;
@@ -19,19 +28,18 @@ body{
     float: left;
     width: 50px;
     height: 500px;
-    border: 1px solid;
-    background: linear-gradient(#c6c6e4, rgb(141, 141, 216));
 }
 .tool{
     width: 44px;
     height: 46px;
     margin: 2px;
-    border: 1px solid #000;
-    border-radius: 50%;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
     line-height: 46px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;   
 }
 
 .color{
@@ -40,6 +48,7 @@ body{
     margin: 2px;
     border-radius: 50%;
     cursor: pointer;
+    border: 1px solid #fff;
 }
 .color1{
     background: #000;
@@ -70,4 +79,9 @@ body{
 }
 .color10{
     background: #090;
+}
+
+#canvasImage{
+    margin: 0 auto;
+    border: 1px solid;
 }

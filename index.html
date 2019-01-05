@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload = "clearCanvas()">
     <div class="container">
         <div class="tools">
-            <div class="tool tool1"><i class="fas fa-paint-brush"></i></div>
-            <div class="tool tool2"><i class="fas fa-pencil-alt"></i></div>
-            <div class="tool tool3" onclick="changeColor('fff')"><i class="fas fa-eraser"></i></div>
+            <div class="tool tool2" onclick="pen()"><i class="fas fa-pencil-alt"></i></div>
+            <div class="tool tool1" onclick="brush()"><i class="fas fa-paint-brush"></i></div>
+            <div class="tool tool3" onclick="erase()"><i class="fas fa-eraser"></i></div>
             <div class="tool tool4"><i class="fas fa-paint-brush"></i></div>
             <div class="tool tool5"><i class="fas fa-paint-brush"></i></div>
             <div class="tool tool6"><i class="fas fa-paint-brush"></i></div>
             <div class="tool tool7"><i class="fas fa-paint-brush"></i></div>
             <div class="tool tool8"><i class="fas fa-paint-brush"></i></div>
-            <div class="tool tool9"><i class="fas fa-paint-brush"></i></div>
-            <div class="tool tool10"><i class="fas fa-paint-brush"></i></div>
+            <div class="tool tool9" onclick="clearCanvas()"><i class="fas fa-trash-alt"></i></div>
+            <div class="tool tool10" onclick="save()"><i class="fas fa-save"></i></div>
         </div>
-        <canvas class="canvasdiv" id="canvas" width="900" height="500"></canvas>
+        <canvas class="canvasdiv" id="canvas" width="1000" height="550"></canvas>
         <div class="colors">
             <div class="color color1" onclick="changeColor('000')"></div>
             <div class="color color2" onclick="changeColor('fff')"></div>
@@ -35,6 +35,7 @@
             <div class="color color9" onclick="changeColor('900')"></div>
             <div class="color color10" onclick="changeColor('090')"></div>
         </div>
+        <img id="canvasImage" style="display:none;">
     </div>
     <script src="app.js"></script>
 </body>
