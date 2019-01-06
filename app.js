@@ -14,8 +14,8 @@ canvas.addEventListener("mouseup", function(e) {coordinate("up", e)}, false);
 canvas.addEventListener("mouseout", function(e) {coordinate("out", e)}, false);
 canvas.addEventListener("mousemove", function(e) {coordinate("move", e)}, false);
 
-
-function coordinate(res, e) {   //Mouse event and mouse x,y coordinate
+//Mouse event and mouse x,y coordinate
+function coordinate(res, e) {
     if(res == "down") {
         firstX = lastX;
         firstY = lastY;
