@@ -21,7 +21,6 @@ function coordinate(res, e) {
         firstY = lastY;
         lastX = e.clientX - canvas.offsetLeft;
         lastY = e.clientY - canvas.offsetTop;
-                       
         draw = true;
         dotDraw = true;
         if(dotDraw) {   //One click, dot
@@ -42,7 +41,10 @@ function coordinate(res, e) {
             drawing();
         }
     }
-    if(res == "up" || res == "out") {
+    if(res == "up") {
+        draw = false;
+    }
+    if(res == "out") {
         draw = false;
     }
 }
@@ -94,6 +96,6 @@ function clearCanvas() {
 //Save 
 function save() {
     let dataURL = canvas.toDataURL();
+    document.getElementById("canvasImage").style = "display: block";
     document.getElementById("canvasImage").src = dataURL;
-    document.getElementById("canvasImage").style.display = "block";
 }
